@@ -1,7 +1,7 @@
 # create instance for jenkins
 resource "aws_instance" "Jenkins" {
   ami                         = var.ami-jenkins
-  instance_type               = "t2.small"
+  instance_type               = "t3.small"
   subnet_id                   = var.subnets-compute
   vpc_security_group_ids      = var.sg-compute
   associate_public_ip_address = true
@@ -10,7 +10,7 @@ resource "aws_instance" "Jenkins" {
   tags = merge(
     var.tags,
     {
-      Name = "fnc-Jenkins"
+      Name = "opsmen-Jenkins"
     },
   )
 }
@@ -28,7 +28,7 @@ resource "aws_instance" "sonbarqube" {
   tags = merge(
     var.tags,
     {
-      Name = "fnc-sonbarqube"
+      Name = "opsmen-sonbarqube"
     },
   )
 }
@@ -45,7 +45,7 @@ resource "aws_instance" "artifactory" {
   tags = merge(
     var.tags,
     {
-      Name = "fnc-artifactory"
+      Name = "opsmen-artifactory"
     },
   )
 }

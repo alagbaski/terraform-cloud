@@ -40,7 +40,7 @@ variable "tags" {
 
 variable "name" {
   type    = string
-  default = "fnc"
+  default = "opsmen"
 
 }
 variable "environment" {

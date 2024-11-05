@@ -1,4 +1,3 @@
-=======
 # Terraform-AWS-Cloud
 
 AWS Cloud Solution For 2 Company Websites Using A Reverse Proxy Technology
@@ -21,8 +20,8 @@ Always refer to the given diagram
 sudo apt install graphviz
 
 ## Use the command below to generate dependency graph
-- terraform graph -type=plan | dot -Tpng > graph.png
-- terraform graph  | dot -Tpng > graph.png
+- `terraform graph -type=plan | dot -Tpng > graph.png`
+- `terraform graph  | dot -Tpng > graph.png`
 
 ## Read More abot terrafrom graph
 https://www.terraform.io/docs/cli/commands/graph.html

@@ -12,13 +12,13 @@ keyed_groups:
 
 filters:
   tag:Name:
-    - fnc-bastion
-    - fnc-nginx
-    - fnc-tooling
-    - fnc-wordpress
-    # - fnc-sonarqube
-    # - fnc-artifactory
-    # - fnc-Jenkins
+    - opsmen-bastion
+    - opsmen-nginx
+    - opsmen-tooling
+    - opsmen-wordpress
+    # - opsmen-sonarqube
+    # - opsmen-artifactory
+    # - opsmen-Jenkins
   instance-state-name: running
 
 hostnames:
