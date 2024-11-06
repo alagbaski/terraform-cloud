@@ -12,12 +12,12 @@ The tooling code is stored in this [repository]((https://github.com/francdomain/
 
 Always refer to the given diagram
 
-![project image](./architecture.png)
+![project image](./architecture-diagram.png)
 
 
 
 ## Install graphviz
-sudo apt install graphviz
+`sudo apt install graphviz`
 
 ## Use the command below to generate dependency graph
 - `terraform graph -type=plan | dot -Tpng > graph.png`
